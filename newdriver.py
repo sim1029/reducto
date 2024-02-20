@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-p', '--pipeline', type=str, default='pipeline.yaml')
+    parser.add_argument('-p', '--pipeline', type=str, default='./pipelines/pipeline.yaml')
     parser.add_argument('-s', '--segment_pattern', default='segment???.mp4')
     parser.add_argument('--no_session', action='store_true')
     parser.add_argument('--skip_inference', action='store_true')
